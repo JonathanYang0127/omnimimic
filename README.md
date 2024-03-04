@@ -30,7 +30,7 @@ To train a small policy on a single dataset, run \
 
 ## Dataloading
 Our codebase uses the [RLDS](https://github.com/google-research/rlds) dataset format. To download the datasets, follow the instructions from the [Open-X Embodiment](https://github.com/google-deepmind/open_x_embodiment) codebase. \
-To link the training script to the datasets, add off the datasets to a single directory, then modify the data\_dir field in the config.
+To link the training script to the datasets, add all of the datasets to a single directory, then modify the data\_dir field in the config.
 
 
 To add a new dataset, follow these steps:
@@ -39,7 +39,7 @@ To add a new dataset, follow these steps:
     * trajectory["observation"]["image"]
     * trajectory["observation"]["state"]
     * trajectory["observation"]["action"]
-3. Add this dataset specific transform to the [RLDS_TRANSFORM_DICT](https://github.com/JonathanYang0127/omnimimic/blob/17152c76d8fd618420779ac2f8040e1468f9f781/omnimimic/data/rlds_data_transforms.py#L408)
+3. Add this dataset specific transform to the [RLDS_TRANSFORM_DICT](https://github.com/JonathanYang0127/omnimimic/blob/3628392798924f5261d38118cc1bc548cfe3315e/omnimimic/data/rlds_data_transforms.py#L408)
 4. Add the dataset name to the [data splits](https://github.com/JonathanYang0127/omnimimic/blob/release/omnimimic/data/data_splits.py) file. Modify the frequency of the data in the training batch.
 
 
