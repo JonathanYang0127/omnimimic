@@ -155,8 +155,6 @@ def bridge_dataset_transform(
     if key == 'image_3':
         trajectory["observation"]["image"] = trajectory["observation"]['image'][:,::-1,::-1,:]    
 
-    #Reverse Action Dim 1 
-    trajectory["action"] *= [1, -1, 1, 1, 1, 1, 1]
     traj_len = tf.shape(trajectory['action'])[0]
     trajectory['dataset_idx'] = tf.ones([traj_len]) * 2
     return trajectory
@@ -185,8 +183,6 @@ def r2d2_dataset_transform(
             size=(64, 64), method='bicubic')
     trajectory["observation"]["image"] = tf.cast(trajectory["observation"]["image"] * 255.0, dtype='uint8')
 
-    #Reverse Action Dim 1 
-    trajectory["action"] *= [1, -1, 1, 1, 1, 1, 1]
     traj_len = tf.shape(trajectory['action'])[0]
     trajectory['dataset_idx'] = tf.ones([traj_len]) * 3
     return trajectory
