@@ -11,10 +11,13 @@ We recommend using [Miniconda](https://docs.conda.io/en/latest/miniconda.html) a
     conda create --name omnimimic python=3.10
     ```
 
-Next, install the required packages:   \
+First, install the required packages:   \
     ```
     pip install -r requirements.txt
     ```
+
+There are additional dependencies that need to be installed manually. Please follow the instructions in [dlimp](https://github.com/kvablack/dlimp), [diffusion_policy](https://github.com/real-stanford/diffusion_policy), and [pytorch-gradual-warmup-lr](https://github.com/ildoonet/pytorch-gradual-warmup-lr).
+
 
 Finally, install the omnimimic module:   \
     ```
