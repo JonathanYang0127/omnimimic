@@ -1,8 +1,11 @@
+os
+argparse
 torch
 torchvision
+time
+pdb
 numpy
 tqdm==4.64.0
-git+https://github.com/ildoonet/pytorch-gradual-warmup-lr.git
 opencv-python==4.6.0.66
 h5py==3.6.0
 wandb==0.12.18
@@ -17,5 +20,11 @@ vit-pytorch==1.6.5
 positional-encodings
 tensorflow
 tensorflow_datasets
-
+PyYAML==6.0.1
+pickle
+pillow==10.2.0
+datetime
+typing==3.7.4.3
+typing_extensions==4.9.0
+itertools
 
