@@ -28,7 +28,7 @@ Finally, install the omnimimic module:   \
 Firstly, modify the appropriate training configuration found in configs. \
 To train a small policy on a single dataset, run \
     ```
-    python train_scripts/train.py -c config/omnimimic_single_dataset.yaml --datasets polybot_dataset
+    python scripts/train.py -c config/omnimimic_single_dataset.yaml --datasets polybot_dataset
     ```
 
 ## Dataloading
