@@ -40,7 +40,7 @@ def visualize_train_images(
         size=num_images_log,
         replace=False)
     for i, axis in enumerate(ax):
-        img = batch_obs_images[num_images_log[i]]
+        img = batch_obs_images[indices[i]]
         axis.imshow(img[:, :, -3:])
         axis.xaxis.set_visible(False)
         axis.yaxis.set_visible(False)
